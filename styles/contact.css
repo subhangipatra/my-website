@@ -1,0 +1,91 @@
+body {
+	font-family: Arial;
+}
+body.dark-mode {
+	background-color: black;
+	color: white;
+}
+p,
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 8%;
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(231, 231, 231);
+	z-index: 300;
+	background-color: white;
+	box-shadow: 0 0 5px lightgray;
+}
+.light-icon {
+	width: 6%;
+}
+.dark-icon {
+	width: 6%;
+}
+.light-mode-icon {
+	padding-left: 20px;
+	width: 35%;
+}
+.right-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.linkedin-header,
+.contact-header,
+.home-header {
+	margin-right: 30px;
+	cursor: pointer;
+}
+.contact {
+	font-weight: bold;
+}
+.main {
+	padding-top: 70px;
+}
+.contact-info-text {
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+.left-section,
+.right-section {
+	flex: 2;
+}
+.contact-container {
+	display: flex;
+	padding-top: 20px;
+}
+.middle-section {
+	flex: 4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.profile-image {
+	width: 12%;
+	height: 100%;
+	padding-right: 30px;
+}
+.image {
+	width: 100%;
+	height: 100%;
+}
+.contact {
+	font-weight: bold;
+	font-size: 18px;
+}
+.contact-info {
+	padding-bottom: 10px;
+}

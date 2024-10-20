@@ -1,10 +1,18 @@
 body {
 	font-family: Arial;
 }
+body.dark-mode {
+	background-color: black;
+	color: white;
+}
 p,
 h3 {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+a {
+	text-decoration: none;
+	color: black;
 }
 .header {
 	position: fixed;
@@ -22,6 +30,9 @@ h3 {
 .light-icon {
 	width: 6%;
 }
+.dark-icon {
+	width: 6%;
+}
 .light-mode-icon {
 	padding-left: 20px;
 	width: 35%;
@@ -32,8 +43,13 @@ h3 {
 	align-items: center;
 }
 .linkedin-header,
-.contact-header {
+.contact-header,
+.home-header {
 	margin-right: 30px;
+	cursor: pointer;
+}
+.home {
+	font-weight: bold;
 }
 .main-content {
 	display: flex;
@@ -90,7 +106,8 @@ h3 {
 
 .projects-section,
 .certification-section,
-.education-section {
+.education-section,
+.interests-lang {
 	display: flex;
 	margin-top: 30px;
 }
@@ -143,14 +160,33 @@ h3 {
 	align-items: center;
 	justify-content: center;
 	width: 40%;
-	height: 20%;
+	padding: 10px 20px;
 	margin-top: 10px;
 	border: none;
 	background-color: gray;
+	cursor: pointer;
+	margin-bottom: 20px;
 }
+.task-button1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+	padding: 10px 20px;
+	margin-top: 10px;
+	border: none;
+	background-color: gray;
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+
 .arrow-down {
 	width: 10%;
 }
+.arrow-up {
+	width: 10%;
+}
+
 .certificate-line {
 	height: 35%;
 	width: 100%;
@@ -196,6 +232,7 @@ h3 {
 }
 .middle-timeline-block {
 	display: flex;
+	flex: 2;
 	align-items: center;
 	padding-bottom: 20px;
 	justify-content: center;
@@ -206,12 +243,60 @@ h3 {
 	height: 16px;
 	border-radius: 50%;
 	background-color: #0e2a47;
-	margin-left: -8px;
+	margin-left: -83px;
 }
+
 .timeline-content {
 	margin-left: 10px;
+	width: 78%;
 }
 .timeline {
 	display: flex;
 	justify-content: center;
+}
+.middle-second-section-il {
+	display: flex;
+	flex: 10;
+}
+.middle-second-section-footer {
+	display: flex;
+	flex: 10;
+	justify-content: center;
+	align-items: center;
+}
+.interests-text,
+.language-text {
+	font-weight: bold;
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.interests,
+.language {
+	flex: 5;
+}
+.music-icon {
+	width: 10%;
+	padding-right: 30px;
+}
+.images,
+.languages {
+	display: flex;
+	justify-content: center;
+}
+.language-container {
+	background-color: #0e2a47;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	justify-content: space-between;
+	margin-right: 30px;
+}
+.footer {
+	background-color: #0e2a47;
+	height: 50%;
+	margin-top: 30px;
+	display: flex;
+	color: white;
+	padding: 20px;
 }
